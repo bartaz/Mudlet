@@ -15,8 +15,8 @@ apps:
 parts:
   mudlet:
     plugin: cmake
-      source: git@github.com:Mudlet/Mudlet.git
-      source-subdir: src
-      build-packages:
-        - qtbase5-dev      
-      after: [desktop-qt5]
+    source: ../src
+    build-packages:
+      - qtbase5-dev
+      - cmake
+    after: [desktop-qt5]
